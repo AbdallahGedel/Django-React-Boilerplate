@@ -6,7 +6,7 @@ export default function TestMessage() {
 
     const [requestData, setRequestData] = React.useState([])
     React.useEffect(() => {
-        const data = requestToServer('/api/test-message')
+        const data = requestToServer('/api/test-message', 'GET')
             .then(d => {
                 setRequestData(d.data);
             })
