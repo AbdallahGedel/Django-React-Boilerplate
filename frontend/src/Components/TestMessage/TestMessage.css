@@ -1,4 +1,7 @@
 .test--message--cont {
+    width: 100%;
+    height: fit-content;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
