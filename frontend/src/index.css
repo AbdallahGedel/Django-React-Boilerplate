@@ -29,16 +29,20 @@ body {
   width: 100%;
   height: fit-content;
   background-color: var(--background-color);
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  transition: grid-template-columns 0.3s ease-in-out;
+}
+
+@media (width < 769px) {
+  body {
+    grid-template-columns: 30px 1fr 30px;
+  }
 }
 
 #root {
+  grid-column: 2;
   background-color: transparent;
   width: 100%;
   height: fit-content;
-  display: grid;
-  grid-template-columns: 50px 1fr 50px;
-}
-
-#root * {
-  grid-column: 2;
 }
