@@ -4,8 +4,8 @@ from os import system
 # Define a list of docker commands 
 
 commands = [
-    'docker build -t deep-translator .',
-    'docker run -p 8000:8000 deep-translator',
+    'docker build -t Django-React-App .',
+    'docker run -p 8000:8000 Django-React-App',
 ]
 
 
