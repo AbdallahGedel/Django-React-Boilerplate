@@ -1,4 +1,6 @@
 .test--message--cont {
+    grid-column: 2/3;
+    background-color: #9cbbbb59;
     width: 100%;
     height: fit-content;
     min-height: 100vh;
