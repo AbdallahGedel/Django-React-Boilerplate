@@ -9,11 +9,9 @@ class IndexView(TemplateView):
 
 
 def testMessage(request):
-    return JsonResponse({
-        'data': [
-            {
-                'id': 1,
-                'testMessage': 'Hello!, I am a Django REST Framework with React.js, Lets build REST API For Your React Web Application.'
-            }
-        ]
-    })
+    return JsonResponse(
+        {
+            'id': 1,
+            'testMessage': 'Hello!, I am a Django REST Framework with React.js, Lets build REST API For Your React Web Application.'
+        }
+    )
