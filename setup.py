@@ -5,9 +5,9 @@ from os import system
 
 commands = [
     'python3 -m venv env',
-    'npm install ./frontend',
     'python3 manage.py makemigrations',
-    'python3 managet.py migrate',
+    'python3 manage.py migrate',
+    'npm install ./frontend',
 ]
 
 
