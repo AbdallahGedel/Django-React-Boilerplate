@@ -59,10 +59,14 @@ ROOT_URLCONF = 'backend.urls'
 
 # Allowing Origins CORS Request
 
-CORS_ALLOWED_ORIGINS = [
-    "http://loaclhost:8000",
-    "http://loaclhost:3000",
-]
+
+CORS_ALLOW_ALL_ORIGINS = True
+
+
+# CORS_ALLOWED_ORIGINS = [
+#     "http://loaclhost:8000",
+#     "http://loaclhost:3000",
+# ]
 
 
 # Allowing Origins CORS Request Methods
@@ -89,6 +93,7 @@ CORS_ALLOW_HEADERS = [
     'user-agent',
     'x-csrftoken',
     'x-requested-with',
+    'multipart/form-data',
 ]
 
 
@@ -171,7 +176,7 @@ STATICFILES_DIRS = [
 # Define path of Uploaded uploaded files 
 
 MEDIA_ROOT = (
-    BASE_DIR / 'upload'
+    BASE_DIR / 'uploads'
 )
 
 
