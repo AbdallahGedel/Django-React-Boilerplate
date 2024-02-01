@@ -12,6 +12,6 @@ def testMessage(request):
     return JsonResponse(
         {
             'id': 1,
-            'testMessage': 'Hello!, I am a Django REST Framework with React.js, Lets build REST API For Your React Web Application.'
+            'testMessage': 'Hello! Developer, Django React connection successfully joined together. Now you create a RESTful API for your Django React full stack web application.'
         }
     )
