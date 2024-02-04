@@ -9,12 +9,12 @@ import {
 } from 'react-router-dom'
 
 
-// Importing user defined pages
+// Importing user defined pages.
 
 import MainLayout from './Components/Layouts/MainLayout';
 
 
-// Cheaching Django-React connection is ok or not
+// Cheaching Django-React connection is ok or not.
 
 import requestToServer from './requestToServer/requestToServer'
 async function loader() {
@@ -31,16 +31,22 @@ function DjangoReactConactionTest() {
 }
 
 
-// All router configuration
+// All router configuration.
 
 const router = createBrowserRouter(createRoutesFromElements(
     <Route path='/' element={<MainLayout />} >
-        <Route index element={<DjangoReactConactionTest />} loader={loader} />
+
+        <Route
+            index
+            element={<DjangoReactConactionTest />}
+            loader={loader}
+        />
+
     </Route>
 ))
 
 
-// Main app function configuration
+// Main app function configuration.
 
 export default function App() {
     return (
